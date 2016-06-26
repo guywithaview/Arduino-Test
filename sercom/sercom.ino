@@ -12,6 +12,8 @@
   Good explanation of sercom funcationality here: 
   https://learn.adafruit.com/using-atsamd21-sercom-to-add-more-spi-i2c-serial-ports/muxing-it-up
 
+  This sketch will echo characters recieved on any of the 4 serial ports to all other serial ports.
+
   for Arduino MKR1000
   by Tom Kuehn
   26/06/2016
@@ -61,7 +63,7 @@ void setup()
   Serial.begin(9600);
   while (!Serial && (count < 30) )
   {
-    delay(200); // wait for serial port to connect. Needed for native USB
+    delay(200);     // Wait for serial port to connect with timeout. Needed for native USB
     digitalWrite(MKR1000_LED, state);
     state = !state;
     count++;
