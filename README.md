@@ -1,8 +1,9 @@
 # Arduino-Test
-Test sketches for Arduinos.
+Arduino test sketches.
 
 ## Sercom
-*For MKR1000 only* Test sketch with 4 serial ports:
+*For MKR1000 only*
+Test sketch with 4 serial ports:
 - Serial  - Native USB interface
 - Serial1 - Default serial port on D13, D14 (Sercom 5)
 - Serial2 - Extra serial port on D0, D1 (Sercom 3)
